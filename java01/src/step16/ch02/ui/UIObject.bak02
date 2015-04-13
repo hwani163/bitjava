@@ -1,0 +1,22 @@
+package step16.ch02.ui;
+
+import java.util.HashMap;
+
+
+/*
+ * 추상클래스 적용후!
+ * 
+ * 1) 이 클래스를 직접사용하지말고 => 직접사용을 제한한다.
+ * 2) 이 클래스의 기능을 상속 받아서 서브 클래스를 만들어 사용하라!
+*/
+
+public abstract class UIObject {
+  public void execute(HashMap<String, Object> parameterMap){
+    //Controller에서 UI객체에 대해 호출하는 method이다
+//    parameterMap은 Controller가 UI객체에 값을 전달하거나.
+//    UI객체가 Controller에게 값을 전달할 때 사용 한다.
+//    SubClass는 execute() Method를 Overriding하여 사용하여야 한다.
+    
+  }
+
+}

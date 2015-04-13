@@ -1,0 +1,15 @@
+CREATE TABLE test2(
+tno INT NOT NULL,
+title VARCHAR(200) NOT NULL,
+writer VARCHAR(20));
+
+INSERT INTO test2(tno , title , writer) Values(1,'aaa','hong');
+INSERT INTO test2(tno , title , writer) Values(2,'bbb','hong');
+INSERT INTO test2(tno , title , writer) Values(3,'ccc','hong');
+INSERT INTO test2(tno , title , writer) Values(4,'ddd','hong');
+INSERT INTO test2(tno , title , writer) Values(5,'eee','hong');
+
+UPDATE  test2 SET writer = 'bbb@test.com' WHERE tno=1;
+UPDATE  test2 SET writer = 'ccc@test.com' WHERE tno=3;
+
+DELETE FROM test2 where tno=1;
